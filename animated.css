@@ -28,11 +28,11 @@
         filter: hue-rotate(0deg);
     }
 }
-/* .card {
+.card {
     background-color: rbg(36, 243, 147);
     animation: startCard 700ms ease-out;
-    anima
-} */
+    animation-fill-mode: backwards;
+}
 
 /*Loop through the grid template areas from a => l => main */
 .card:nth-child(1) {
