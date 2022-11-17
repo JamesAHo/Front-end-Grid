@@ -1,0 +1,15 @@
+.animated {
+    height: 85vh;
+    display: grid;
+    gap:1rem;
+
+    /* Using explicit grid https://css-tricks.com/difference-explicit-implicit-grids/*/
+    /* Define cols and as letters and main column as emoji*/
+    grid-template-areas: 
+        'a  b  c   d'
+        'l  👻 👻 e'
+        'k  👻 👻 f'
+        'j  i   h  g'
+    ;
+
+}
