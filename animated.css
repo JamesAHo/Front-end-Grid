@@ -6,10 +6,84 @@
     /* Using explicit grid https://css-tricks.com/difference-explicit-implicit-grids/*/
     /* Define cols and as letters and main column as emoji*/
     grid-template-areas: 
-        'a  b  c   d'
+        'a  b   c  d'
         'l  👻 👻 e'
         'k  👻 👻 f'
         'j  i   h  g'
     ;
+    /*The grid going clockwise from a to l and then emoji will be the main area of content*/
+    grid-template-rows: repeat(4, 25%);
+    --countdown-delays: 100ms;
+}
+/* .card {
+    background-color: rbg(36, 243, 147);
+    animation: startCard 700ms ease-out;
+    anima
+} */
+
+/*Loop through the grid template areas from a => l => main */
+.card:nth-child(1) {
+    grid-area: a;
+    animation-delay: calc(1 * var(--countdown-delays));
+
+}
+.card:nth-child(2) {
+    grid-area: b;
+    animation-delay: calc(2 * var(--countdown-delays));
+
+}
+.card:nth-child(3) {
+    grid-area: c;
+    animation-delay: calc(3 * var(--countdown-delays));
+
+}
+.card:nth-child(4) {
+    grid-area: d;
+    animation-delay: calc(4 * var(--countdown-delays));
+
+}
+.card:nth-child(5) {
+    grid-area: e;
+    animation-delay: calc(5 * var(--countdown-delays));
+
+}
+.card:nth-child(6) {
+    grid-area: f;
+    animation-delay: calc(6 * var(--countdown-delays));
+
+}
+.card:nth-child(7) {
+    grid-area: g;
+    animation-delay: calc(7 * var(--countdown-delays));
+
+}
+.card:nth-child(8) {
+    grid-area: h;
+    animation-delay: calc(8 * var(--countdown-delays));
+
+}
+.card:nth-child(9) {
+    grid-area: i;
+    animation-delay: calc(9 * var(--countdown-delays));
+
+}
+.card:nth-child(10) {
+    grid-area: j;
+    animation-delay: calc(10 * var(--countdown-delays));
+
+}
+.card:nth-child(11) {
+    grid-area: k;
+    animation-delay: calc(11 * var(--countdown-delays));
+
+}
+.card:nth-child(12) {
+    grid-area: l;
+    animation-delay: calc(12 * var(--countdown-delays));
+
+}
+.card:last-child {
+    grid-area:👻 ;
+    animation-delay: calc(13 * var(--countdown-delays));
 
 }
