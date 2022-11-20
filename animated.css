@@ -11,6 +11,7 @@
         'k  👻 👻 f'
         'j  i   h  g'
     ;
+    /* The card will animate from a through l then main are(emoji area) as the last area. */
     /*The grid going clockwise from a to l and then emoji will be the main area of content*/
     grid-template-rows: repeat(4, 25%);
     --countdown-delays: 100ms;
